@@ -1,0 +1,8 @@
+{
+  "name": "15days",
+  "app_id": "1503e367",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ]
+}
