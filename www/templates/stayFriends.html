@@ -1,26 +1,25 @@
-<ion-view title="StayFriends" id="page1" style="background-color:#FDFFC5;">
+<ion-view title="StayFriends" id="page1" style="background-color:#F0F3F8;">
   <ion-nav-buttons side="right" class="has-header">
-    <button class="button button-light icon ion-gear-a"></button>
+    <button class="button button-dark icon ion-gear-a"></button>
   </ion-nav-buttons>
   <ion-content padding="false" class="has-header">
-    <div id="stayFriends-container2">
       <ion-list id="stayFriends-list3">
         <div class="item item-body new-info" id="stayFriends-list-item-container3">
-          <button id="stayFriends-button8" style="font-weight:300;text-align:right;" class="button button-light button-small button-icon icon ion-android-close"></button>
+          <button id="close-button" style="font-weight:300; text-align:right;" class="button button-light button-small button-icon icon ion-android-close"></button>
           <div id="stayFriends-markdown5" class="show-list-numbers-and-dots">
-            <p style="margin-top:0px;color:#000000;">Keep Track of all your friends to know who you missed to meet.
+            <p style="margin-top:0; color:#000000;">Keep Track of all your friends to know who you missed to meet.
               <strong>Add friends!</strong>
             </p>
           </div>
         </div>
       </ion-list>
-    </div>
     <div class="list card" id="stayFriends-card21">
       <ion-item class="item-avatar item-icon-right dark" id="stayFriends-list-item10">
         <img src="img/cQdc7D61SxqZn3JHkfJV_ben.jpg">
-        <h2dark>Item
-          <p>-Progessbar here-</p>
-          <i class="icon ion-android-checkmark-circle"></i>
+        <h2dark>
+            <h2>Name</h2>
+            <progress value="10" max="15"></progress>
+            <i class="icon ion-android-checkmark-circle"></i>
         </h2dark>
       </ion-item>
       <form id="stayFriends-form2" class="list">
@@ -29,24 +28,10 @@
           <input type="text" placeholder="Where did we met last?">
         </label>
       </form>
-      <progress value="22" max="100"></progress>
     </div>
-    <div class="list card" id="stayFriends-card22">
-      <ion-item class="item-avatar item-icon-right dark" id="stayFriends-list-item13">
-        <img src="img/cQdc7D61SxqZn3JHkfJV_ben.jpg">
-        <h2dark>Item
-          <p>-Progessbar here-</p>
-          <i class="icon ion-android-checkmark-circle"></i>
-        </h2dark>
-      </ion-item>
-      <form id="stayFriends-form4" class="list">
-        <label class="item item-input" id="stayFriends-input4">
-          <span class="input-label">Input</span>
-          <input type="text" placeholder="Where did we met last?">
-        </label>
-      </form>
-      <progress value="45" max="100"></progress>
-    </div>
-    <button id="stayFriends-button7" style="border-radius:0px 0px 0px 0px;" class="button button-balanced button-small button-block icon ion-android-people"> Track new Friend</button>
   </ion-content>
+
+    <button id="add-button" class="button button-balanced button-round button-float">
+        <i class="icon ion-android-people"></i>
+    </button>
 </ion-view>

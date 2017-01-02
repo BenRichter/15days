@@ -9814,3 +9814,29 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+progress[value] {
+  height: 25px; }
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #ef473a, #33cd5f);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%; }
+
+.button-round {
+  border-radius: 50%;
+  height: 52px;
+  width: 50px; }
+
+.button-float {
+  z-index: 12;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transform: translate(-50%, 0); }
