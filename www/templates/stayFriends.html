@@ -1,35 +1,33 @@
-<ion-view title="StayFriends" id="page1" style="background-color:#F0F3F8;">
-  <ion-nav-buttons side="right" class="has-header">
-    <button class="button button-dark icon ion-gear-a"></button>
-  </ion-nav-buttons>
-  <ion-content padding="false" class="has-header">
-      <ion-list id="stayFriends-list3">
-        <div class="item item-body new-info" id="stayFriends-list-item-container3">
-          <button id="close-button" style="font-weight:300; text-align:right;" class="button button-light button-small button-icon icon ion-android-close"></button>
-          <div id="stayFriends-markdown5" class="show-list-numbers-and-dots">
-            <p style="margin-top:0; color:#000000;">Keep Track of all your friends to know who you missed to meet.
-              <strong>Add friends!</strong>
-            </p>
-          </div>
+<ion-view title="StayFriends" id="home" style="background-color:#f0f3f8;">
+    <ion-nav-buttons side="right" class="has-header">
+        <button class="button button-dark icon ion-gear-a"></button>
+    </ion-nav-buttons>
+    <ion-content padding="false" class="has-header">
+
+        <div class="list card" id="friend-1">
+            <ion-item class="item-avatar item-icon-right dark">
+                <img src="img/cQdc7D61SxqZn3JHkfJV_ben.jpg">
+                <h2dark>
+                    <h2>Name</h2>
+                    <progress value="10" max="15"></progress>
+                    <i class="icon ion-android-checkmark-circle"></i>
+                </h2dark>
+            </ion-item>
+            <!--<form id="friend-1-form" class="list">-->
+                <!--<label class="item item-input">-->
+                    <!--<span class="input-label">Input</span>-->
+                    <!--<input type="text" placeholder="Where did we met last?">-->
+                <!--</label>-->
+            <!--</form>-->
         </div>
-      </ion-list>
-    <div class="list card" id="stayFriends-card21">
-      <ion-item class="item-avatar item-icon-right dark" id="stayFriends-list-item10">
-        <img src="img/cQdc7D61SxqZn3JHkfJV_ben.jpg">
-        <h2dark>
-            <h2>Name</h2>
-            <progress value="10" max="15"></progress>
-            <i class="icon ion-android-checkmark-circle"></i>
-        </h2dark>
-      </ion-item>
-      <form id="stayFriends-form2" class="list">
-        <label class="item item-input" id="stayFriends-input1">
-          <span class="input-label">Input</span>
-          <input type="text" placeholder="Where did we met last?">
-        </label>
-      </form>
-    </div>
-  </ion-content>
+
+        <p id="empty-info" class="padding text-center">
+            Keep Track of all your friends to know who you missed to meet. <br/>
+            <strong>Add friends below!</strong>
+            <!--<img src="" title="little grey dino here...">-->
+        </p>
+
+    </ion-content>
 
     <button id="add-button" class="button button-balanced button-round button-float">
         <i class="icon ion-android-people"></i>
