@@ -9815,19 +9815,6 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-progress[value] {
-  height: 25px; }
-
-progress[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
-
-progress[value]::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #ef473a, #33cd5f);
-  border-radius: 2px;
-  background-size: 35px 20px, 100% 100%, 100% 100%; }
-
 .button-round {
   border-radius: 50%;
   height: 52px;
@@ -9840,3 +9827,47 @@ progress[value]::-webkit-progress-value {
   left: 50%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   transform: translate(-50%, 0); }
+
+#empty-info {
+  max-width: 250px;
+  margin: 0 auto; }
+
+progress[value] {
+  margin: 7px auto 0;
+  height: 24px;
+  text-align: right; }
+  progress[value]::after {
+    content: attr(value);
+    position: relative;
+    right: -25px;
+    font-weight: bold; }
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #ef473a, #33cd5f);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%; }
+
+.item-avatar {
+  padding-left: 80px;
+  min-height: 80px; }
+  .item-avatar > img:first-child {
+    max-width: 55px;
+    max-height: 55px;
+    top: 14px;
+    left: 14px; }
+
+.item-icon-right {
+  padding-right: 75px; }
+  .item-icon-right .icon {
+    right: 0;
+    padding-right: 11px;
+    padding-left: 11px;
+    cursor: pointer; }
+    .item-icon-right .icon::before {
+      position: relative;
+      bottom: -11px; }
