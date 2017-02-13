@@ -3,15 +3,11 @@
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
 
-For example, you might change some of the default colors:
-
 $light:                           #fff !default;
 $stable:                          #f8f8f8 !default;
 $positive:                        #387ef5 !default;
 $calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
 $energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
@@ -9832,25 +9828,60 @@ a.button {
   max-width: 250px;
   margin: 0 auto; }
 
-progress[value] {
-  margin: 7px auto 0;
-  height: 24px;
-  text-align: right; }
-  progress[value]::after {
-    content: attr(value);
-    position: relative;
-    right: -25px;
-    font-weight: bold; }
-
-progress[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
-
-progress[value]::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #ef473a, #33cd5f);
-  border-radius: 2px;
-  background-size: 35px 20px, 100% 100%, 100% 100%; }
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+  top: 10px; }
+  .progress-bar[data-days="1"] {
+    width: 6.66667%;
+    background: #e2503c; }
+  .progress-bar[data-days="2"] {
+    width: 13.33333%;
+    background: #d6593f; }
+  .progress-bar[data-days="3"] {
+    width: 20%;
+    background: #c96241; }
+  .progress-bar[data-days="4"] {
+    width: 26.66667%;
+    background: #bd6b44; }
+  .progress-bar[data-days="5"] {
+    width: 33.33333%;
+    background: #b07446; }
+  .progress-bar[data-days="6"] {
+    width: 40%;
+    background: #a47d49; }
+  .progress-bar[data-days="7"] {
+    width: 46.66667%;
+    background: #97864b; }
+  .progress-bar[data-days="8"] {
+    width: 53.33333%;
+    background: #8b8e4e; }
+  .progress-bar[data-days="9"] {
+    width: 60%;
+    background: #7e9750; }
+  .progress-bar[data-days="10"] {
+    width: 66.66667%;
+    background: #72a053; }
+  .progress-bar[data-days="11"] {
+    width: 73.33333%;
+    background: #65a955; }
+  .progress-bar[data-days="12"] {
+    width: 80%;
+    background: #59b258; }
+  .progress-bar[data-days="13"] {
+    width: 86.66667%;
+    background: #4cbb5a; }
+  .progress-bar[data-days="14"] {
+    width: 93.33333%;
+    background: #40c45d; }
+  .progress-bar[data-days="15"] {
+    width: 100%;
+    background: #33cd5f; }
+  .progress-bar .days {
+    position: absolute;
+    right: -1.2rem;
+    top: -5px; }
 
 .item-avatar {
   padding-left: 80px;
